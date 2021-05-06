@@ -4,6 +4,16 @@ import * as types from "../constants/auth.constants";
 
 import api from "../../apiService";
 
-const authActions = {};
+function register() {
+    try {
 
-export default authActions;
+    } catch (error) {
+        console.log({ error })
+    }
+};
+
+const authActions = {
+    register,
+};
+
+export { authActions }

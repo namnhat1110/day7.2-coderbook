@@ -1,13 +1,23 @@
 import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import { HomePage, AuthPage, FourOhFourPage } from "./pages"
+import { ProtectedRoute, NavigationBar } from "./components"
 
-import Navbar from "./components/Navbar";
+
+
 
 function App() {
   return (
-      <div className="App">
-        <Navbar />
-        <h1>Coderbook</h1>
+    <div className="App">
+      <NavigationBar />
+      <div className="container mt-5" >
+        <Switch>
+          <Route exact path={`/login`} component={AuthPage} />
+          <ProtectedRoute exact path={`/`} component={HomePage} />
+          <Route path={`/*`} component={FourOhFourPage} />
+        </Switch>
       </div>
+    </div>
   );
 }
 
