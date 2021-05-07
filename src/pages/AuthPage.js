@@ -1,20 +1,21 @@
 import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { authActions } from '../redux/actions'
 
 
 const AuthPage = () => {
     const dispatch = useDispatch()
+    const { auth } = useSelector((state) => state)
     const [email, setEmail] = useState(``)
     const [password, setPassword] = useState(``)
 
     function onSubmit(e) {
         e.preventDefault()
-        dispatchEvent(authActions.register())
+        dispatch(authActions.register({ email, password }))
     }
 
-    console.log({ email })
+    if (auth.loading) return <h1>Registering ...</h1>
     return (
         <div>
             <Form onSubmit={onSubmit}>
