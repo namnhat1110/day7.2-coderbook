@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { authActions } from '../redux/actions'
+import { Redirect } from 'react-router-dom'
 
 
 const AuthPage = () => {
@@ -16,6 +17,8 @@ const AuthPage = () => {
     }
 
     if (auth.loading) return <h1>Registering ...</h1>
+    if (auth.redirectToHomePage) return <Redirect to="/" />
+
     return (
         <div>
             <Form onSubmit={onSubmit}>
