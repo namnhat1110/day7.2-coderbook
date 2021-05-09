@@ -23,48 +23,6 @@
         "password": "123"
       },
       "id": 2
-    },
-    {
-      "email": {
-        "email": "namnhat1110@gmail.com",
-        "password": "123"
-      },
-      "id": 3
-    },
-    {
-      "email": {
-        "email": "namnhat1110@gmail.com",
-        "password": "123"
-      },
-      "id": 4
-    },
-    {
-      "email": {
-        "email": "namnhat1110@gmail.com",
-        "password": "123"
-      },
-      "id": 5
-    },
-    {
-      "email": {
-        "email": "namnhat1110@gmail.com",
-        "password": "123"
-      },
-      "id": 6
-    },
-    {
-      "email": {
-        "email": "123@gmail.com",
-        "password": "123"
-      },
-      "id": 7
-    },
-    {
-      "email": {
-        "email": "namnhat1110@gmail.com",
-        "password": "123"
-      },
-      "id": 8
     }
   ],
   "posts": [
@@ -73,6 +31,20 @@
       "userId": 1,
       "body": "Hello World Newest",
       "createdAt": "Wed May 05 2021 13:22:33 GMT+0700",
+      "comments": [
+        {
+          "body": "123"
+        },
+        {
+          "body": "zxcv"
+        },
+        {
+          "body": "test"
+        },
+        {
+          "body": "hi"
+        }
+      ],
       "photos": [
         {
           "url": "https://bit.ly/3ejqYjx"
@@ -87,6 +59,7 @@
       "userId": 2,
       "body": "Hello World Oldest",
       "createdAt": "Wed May 04 2021 13:22:33 GMT+0700",
+      "comments": [],
       "photos": [
         {
           "url": "https://bit.ly/3ejqYjx"
@@ -99,7 +72,231 @@
     {
       "userId": 1,
       "body": "Hello World Newest Newest",
+      "comments": [],
       "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "body": "123",
+      "userId": 1,
+      "postId": 1,
+      "id": 1
+    },
+    {
+      "body": "123",
+      "userId": 1,
+      "postId": 1,
+      "id": 2
+    },
+    {
+      "body": "1234",
+      "userId": 1,
+      "postId": 1,
+      "id": 3
+    },
+    {
+      "body": "i hope that work",
+      "userId": 1,
+      "postId": 1,
+      "id": 4
+    },
+    {
+      "body": "hope dat work",
+      "userId": 1,
+      "postId": 1,
+      "id": 5
+    },
+    {
+      "body": "wow",
+      "userId": 1,
+      "postId": 1,
+      "id": 6
+    },
+    {
+      "body": "omg",
+      "userId": 1,
+      "postId": 2,
+      "id": 7
+    },
+    {
+      "body": "1",
+      "userId": 1,
+      "postId": 1,
+      "id": 8
+    },
+    {
+      "body": "test",
+      "userId": 1,
+      "postId": 1,
+      "id": 9
+    }
+  ],
+  "reactions": [
+    {
+      "emo": {
+        "id": 1,
+        "userId": 1,
+        "body": "Hello World Newest",
+        "createdAt": "Wed May 05 2021 13:22:33 GMT+0700",
+        "comments": [
+          {
+            "body": "123"
+          },
+          {
+            "body": "zxcv"
+          },
+          {
+            "body": "test"
+          },
+          {
+            "body": "hi"
+          }
+        ],
+        "photos": [
+          {
+            "url": "https://bit.ly/3ejqYjx"
+          },
+          {
+            "url": "https://bit.ly/3b2BWbe"
+          }
+        ]
+      },
+      "userId": 1,
+      "emoId": 1,
+      "id": 1
+    },
+    {
+      "emo": {
+        "id": 1,
+        "userId": 1,
+        "body": "Hello World Newest",
+        "createdAt": "Wed May 05 2021 13:22:33 GMT+0700",
+        "comments": [
+          {
+            "body": "123"
+          },
+          {
+            "body": "zxcv"
+          },
+          {
+            "body": "test"
+          },
+          {
+            "body": "hi"
+          }
+        ],
+        "photos": [
+          {
+            "url": "https://bit.ly/3ejqYjx"
+          },
+          {
+            "url": "https://bit.ly/3b2BWbe"
+          }
+        ]
+      },
+      "userId": 1,
+      "emoId": 1,
+      "id": 2
+    },
+    {
+      "emo": {
+        "id": 1,
+        "userId": 1,
+        "body": "Hello World Newest",
+        "createdAt": "Wed May 05 2021 13:22:33 GMT+0700",
+        "comments": [
+          {
+            "body": "123"
+          },
+          {
+            "body": "zxcv"
+          },
+          {
+            "body": "test"
+          },
+          {
+            "body": "hi"
+          }
+        ],
+        "photos": [
+          {
+            "url": "https://bit.ly/3ejqYjx"
+          },
+          {
+            "url": "https://bit.ly/3b2BWbe"
+          }
+        ]
+      },
+      "userId": 1,
+      "emoId": 1,
+      "id": 3
+    },
+    {
+      "emo": {
+        "id": 1,
+        "userId": 1,
+        "body": "Hello World Newest",
+        "createdAt": "Wed May 05 2021 13:22:33 GMT+0700",
+        "comments": [
+          {
+            "body": "123"
+          },
+          {
+            "body": "zxcv"
+          },
+          {
+            "body": "test"
+          },
+          {
+            "body": "hi"
+          }
+        ],
+        "photos": [
+          {
+            "url": "https://bit.ly/3ejqYjx"
+          },
+          {
+            "url": "https://bit.ly/3b2BWbe"
+          }
+        ]
+      },
+      "userId": 1,
+      "emoId": 1,
+      "id": 4
+    },
+    {
+      "emo": {
+        "id": 1,
+        "userId": 1,
+        "body": "Hello World Newest",
+        "createdAt": "Wed May 05 2021 13:22:33 GMT+0700",
+        "comments": [
+          {
+            "body": "123"
+          },
+          {
+            "body": "zxcv"
+          },
+          {
+            "body": "test"
+          },
+          {
+            "body": "hi"
+          }
+        ],
+        "photos": [
+          {
+            "url": "https://bit.ly/3ejqYjx"
+          },
+          {
+            "url": "https://bit.ly/3b2BWbe"
+          }
+        ]
+      },
+      "userId": 1,
+      "emoId": 1,
+      "id": 5
     }
   ]
 }

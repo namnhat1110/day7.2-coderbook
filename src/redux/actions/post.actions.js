@@ -21,24 +21,31 @@ const getPosts = (email, password) => async (dispatch) => {
 
 const getUserPosts = (userId) => async (dispatch) => {
     try {
-
-    } catch (error) {
-
-    }
+    } catch (error) { }
 }
 
 const getGroupPosts = (groupId) => async (dispatch) => {
     try {
-
-    } catch (error) {
-
-    }
+    } catch (error) { }
 }
+
+// const createPostComment = (post, commentBody) => async (dispatch) => {
+//     try {
+//         const { data } = await api.put("/posts/" + post.id, {
+//             ...post,
+//             comments: post.comments.concat({
+//                 body: commentBody
+//             })
+
+//         })
+//     } catch (error) { }
+// }
 
 const postActions = {
     getPosts,
     getUserPosts,
-    getGroupPosts
+    getGroupPosts,
+    // createPostComment
 };
 
 export { postActions }

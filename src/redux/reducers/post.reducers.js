@@ -21,7 +21,14 @@ const postReducer = (state = initialState, action) => {
                 loading: false,
                 posts: payload
             }
-
+        case types.CREATE_COMMENT_SUCCESS:
+            const idx = state.posts.findIndex(p => p.id === action.payload.postId)
+            state.posts[idx].comments = state.posts[idx].comments.concat(payload)
+            const posts = state.posts
+            return {
+                ...state,
+                posts
+            }
         case types.GET_POST_FAILURE:
             return {
                 ...state,
@@ -29,6 +36,8 @@ const postReducer = (state = initialState, action) => {
                 error: true,
                 message: 'Request failed'
             }
+
+
         default:
             return state;
     }
